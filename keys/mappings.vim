@@ -13,8 +13,8 @@ inoremap jk <Esc>
 inoremap kj <Esc>
 
 " Easy CAPS
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwU<Esc>
+"inoremap <c-u> <ESC>viwUi
+"nnoremap <c-u> viwU<Esc>
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
@@ -40,5 +40,5 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <Leader>o o<Esc>^Da
-nnoremap <Leader>O O<Esc>^Da
+"noremap <Leader>o o<Esc>^Da
+"nnoremap <Leader>O O<Esc>^Da
