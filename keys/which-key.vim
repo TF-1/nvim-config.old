@@ -24,32 +24,34 @@ let g:which_key_sep = '→'
 " set timeoutlen=100
 
 " Single mappings
-let g:which_key_map['r'] = [ ':RnvimrToggle' , 'ranger' ]
-
+let g:which_key_map['o'] = [ ':Files'           , 'open FZF' ]
+let g:which_key_map['e'] = [ ':RnvimrToggle'    , 'open file' ]
+let g:which_key_map['E'] = [ ':NERDTreeToggle'  , 'File Explorer' ]
+let g:which_key_map['s'] = [ ':BLines'          , 'search buffer' ]
+let g:which_key_map['S'] = [ ':Lines'           , 'search all' ]
+let g:which_key_map['g'] = [ ':Rg'              , 'grep Rg']
+let g:which_key_map['b'] = [ ':Buffers'         , 'select buffer']
+let g:which_key_map['b'] = [ ':Buffers'         , 'select buffer']
+"
 " c is for command
+"
 let g:which_key_map['c'] = {
       \ 'name' : '+command' ,
       \ 'd' : [ ':cd %:p:h'    , 'change dir' ],
       \ 'r' : [ ':so $MYVIMRC' , 'reload vim.rc' ],
-      \ 'f' : [ ':NERDTreeToggle' , 'NERD Toggle' ]
       \ }
-" s is for search
-let g:which_key_map['s'] = {
-      \ 'name' : '+search' ,
-      \ '/' : [':History/'     , 'History'],
-      \ ';' : [':Commands'     , 'Commands'],
-      \ 's' : [':BLines'       , 'Buffer'],
-      \ 'S' : [':Lines'        , 'Buffers all'] ,
-      \ 'b' : [':Buffers'      , 'open Buffers'],
-      \ 'f' : [':Files'        , 'Files'],
+" f is for find
+let g:which_key_map['f'] = {
+      \ 'name' : '+find' ,
+      \ '/' : [':History/'     , 'Find history'],
       \ 'h' : [':History'      , 'File history'],
       \ 'H' : [':History:'     , 'Command history'],
       \ 'm' : [':Marks'        , 'Marks'] ,
-      \ 'M' : [':Maps'         , 'normal key maps'] ,
-      \ 'p' : [':Helptags'     , 'help tags'] ,
-      \ 'g' : [':Rg'           , 'grep Rg'],
+      \ 'M' : [':Maps'         , 'Normal key maps'] ,
+      \ 'c' : [':Commands'     , 'Commands'],
+      \ 'p' : [':Helptags'     , 'Find help§ tags'] ,
       \ 'w' : [':Windows'      , 'Windows'],
-      \ 'z' : [':FZF'          , 'open file FZF'],
+      \ 'F' : [':FZF  '        , 'Open FZF'],
       \ }
 "let g:which_key_map.s = {
 "      \ 'name' : '+search' ,
@@ -96,7 +98,7 @@ let g:which_key_map['w'] = {
       \ '=' : ['<C-W>='     , 'window-balance']  ,
       \ '?' : ['Windows'    , 'fzf-window']      ,
       \ }
-let g:which_key_map['b'] = {
+let g:which_key_map['B'] = {
       \ 'name' : '+buffers' ,
       \ 's' : ['Buffers','show :Buffers']       ,
       \ 'l' : ['ls'    , 'show :ls']            ,
