@@ -31,29 +31,38 @@ let g:which_key_map['s'] = [ ':BLines'          , 'search buffer' ]
 let g:which_key_map['S'] = [ ':Lines'           , 'search all' ]
 let g:which_key_map['g'] = [ ':Rg'              , 'grep Rg']
 let g:which_key_map['b'] = [ ':Buffers'         , 'select buffer']
-let g:which_key_map['b'] = [ ':Buffers'         , 'select buffer']
-"
-" c is for command
-"
-let g:which_key_map['c'] = {
-      \ 'name' : '+command' ,
+
+" file related commands
+let g:which_key_map['f'] = {
+      \ 'name' : '+file' ,
       \ 'd' : [ ':cd %:p:h'    , 'change dir' ],
       \ 'r' : [ ':so $MYVIMRC' , 'reload vim.rc' ],
       \ }
-" f is for find
-let g:which_key_map['f'] = {
-      \ 'name' : '+find' ,
+" / is for find
+let g:which_key_map['/'] = {
+      \ 'name' : '+history' ,
       \ '/' : [':History/'     , 'Find history'],
-      \ 'h' : [':History'      , 'File history'],
-      \ 'H' : [':History:'     , 'Command history'],
+      \ 'f' : [':History'      , 'File history'],
+      \ 'c' : [':History:'     , 'Command history'],
       \ 'm' : [':Marks'        , 'Marks'] ,
-      \ 'M' : [':Maps'         , 'Normal key maps'] ,
-      \ 'c' : [':Commands'     , 'Commands'],
-      \ 'p' : [':Helptags'     , 'Find help§ tags'] ,
+      \ }
+" toggle related commands
+let g:which_key_map['t'] = {
+      \ 'name' : '+toggle' ,
+      \ 'r' : [ ':set relativenumber!'    , 'enable relative numbers'],
+      \ 'h' : [ ':noh'                    , 'disable search highlight'],
+      \ }
+"
+" h for help
+let g:which_key_map['h'] = {
+      \ 'name' : '+help' ,
+      \ 'c' : [':Commands'     , 'Find command'],
+      \ 'p' : [':Helptags'     , 'Find help tags'] ,
+      \ 'k' : [':Maps'         , 'Normal key maps'] ,
       \ 'w' : [':Windows'      , 'Windows'],
       \ 'F' : [':FZF  '        , 'Open FZF'],
       \ }
-"let g:which_key_map.s = {
+
 "      \ 'name' : '+search' ,
 "      \ '/' : [':History/'     , 'search History'],
 "      \ ';' : [':Commands'     , 'Commands'],

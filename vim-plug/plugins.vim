@@ -30,4 +30,4 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Plug 'rbgrouleff/bclose.vim'
     Plug 'ryanoasis/vim-devicons'
     Plug 'kevinhwang91/rnvimr'
- call plug#end()
+call plug#end()
