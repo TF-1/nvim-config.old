@@ -9,7 +9,7 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set filetype indent on                  " File type specific indentation
+"set filetype indent on                  " File type specific indentation
 set shiftround 
 " === Search
 set hlsearch                            " Enable search highlighting
@@ -47,7 +47,6 @@ set foldmethod=indent                   " Fold based on indention levels.
 set foldnestmax=3                       " Only fold up to three nested levels.
 set nofoldenable                        " Disable folding by default."
 " === Miscelleneous
-set hidden                              " Required to keep multiple buffers open multiple buffers
 set fileencoding=utf-8                  " The encoding written to file
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set conceallevel=0                      " So that I can see `` in markdown files
@@ -70,7 +69,7 @@ set nomodeline                          " Ignore file’s mode lines; use vimrc 
 set noswapfile                          " Disable swap files.
 set nrformats-=octal                    " Interpret octal as decimal when incrementing numbers.
 "set shell                               " The shell used to execute commands.
-set spell                               " Enable spellchecking.
+"set spell                               " Enable spellchecking.
 set wildignore+=.pyc,.swp               " Ignore files matching these patterns when opening files based on a glob pattern.
 "set autochdir                          " Your working directory will always be the same as your working directory
 
