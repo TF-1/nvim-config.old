@@ -25,6 +25,7 @@ let g:which_key_sep = '→'
 
 " Single mappings
 let g:which_key_map['o'] = [ ':Files'           , 'open FZF' ]
+let g:which_key_map['O'] = [ ':Startify'        , 'Startify' ]
 let g:which_key_map['e'] = [ ':RnvimrToggle'    , 'open file' ]
 let g:which_key_map['E'] = [ ':NERDTreeToggle'  , 'File Explorer' ]
 let g:which_key_map['s'] = [ ':BLines'          , 'search buffer' ]
