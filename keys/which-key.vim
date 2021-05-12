@@ -33,6 +33,14 @@ let g:which_key_map['S'] = [ ':Lines'           , 'search all' ]
 let g:which_key_map['g'] = [ ':Rg'              , 'grep Rg']
 let g:which_key_map['b'] = [ ':Buffers'         , 'select buffer']
 
+" GIT commands
+let g:which_key_map['G'] = {
+      \ 'name' : '+GIT' ,
+      \ '~' : [ ':SignifyToggle'   , 'changed lines' ],
+      \ 'l' : [ ':GV'              , 'GIT log'],
+      \ 'L' : [ ':GV!'             , 'GIT log file'],
+      \ }
+"
 " file related commands
 let g:which_key_map['f'] = {
       \ 'name' : '+file' ,
