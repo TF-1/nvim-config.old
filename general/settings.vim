@@ -44,7 +44,7 @@ set visualbell                          " Flash the screen instead of beeping on
 "set Colorscheme wombat256mod            " Change color scheme.
 " === Code Folding
 set foldmethod=indent                   " Fold based on indention levels.
-set foldnestmax=3                       " Only fold up to three nested levels.
+set foldnestmax=10                       " Only fold up to three nested levels.
 set nofoldenable                        " Disable folding by default."
 " === Miscelleneous
 set fileencoding=utf-8                  " The encoding written to file
