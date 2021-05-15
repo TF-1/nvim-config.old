@@ -16,9 +16,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'jiangmiao/auto-pairs'
     " Help finding the right key combinations:
     Plug 'liuchengxu/vim-which-key'
-    " Install a theme
-    "Plug 'joshdick/onedark.vim'
-    " Status bar at the top and bottom:wq
+    " Install a theme a number of popular color schemes
+    " Plug 'tomasr/molokai'
+    Plug 'morhetz/gruvbox' 
+    " Status bar at the top and bottom
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     " Searching plugs
