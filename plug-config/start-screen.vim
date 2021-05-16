@@ -22,7 +22,7 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
-            \ '~/Code',
+            \ { 'h': '~/.config/nvim/cheatsheet.txt'},
             \ ]
 
 let g:startify_custom_header = [

@@ -1,0 +1,49 @@
+VIM
+===
+
+Search & Replace
+----------------
+
+
+
+Fugitive Commands
+=================
+
+Staging
+-------
+s: Stage a file, hunk or visual selection.
+u: Unstage a file, hunk or visual selection.
+U: Unstage all files.
+>, <, =: Open, close, or toggle an inline diff.
+dd: Open a diffsplit between the working tree and index. Changes can be staged using dp (“diff put”) and do (“diff obtain”?).
+
+Navigation
+----------
+o, gO: Open commit or file in split/vertical split, respectively.
+
+Commits
+-------
+cc: Create a commit.
+ca: Amend a commit and edit the commit message.
+ce: Amend a commit message without editing the commit message.
+cw: Reword the last commit.
+crc: Revert the last commit under the cursor
+
+Checkout
+--------
+coo: Checkout commit under cursor
+
+Stash
+------
+czz: Push changes to stash
+czw: Push working tree to stash
+cza, czp: Apply/pop top-most stashed changes.
+czA, czP: Apply/pop top-most stashed changes while preserving the index.
+
+Rebasing
+--------
+ri: Start an interactive rebase
+ru: Rebase against @{upstream}
+ra: Abort the current rebase
+rr: Continue the current rebase
+rs: Skip the current commit and continue.
