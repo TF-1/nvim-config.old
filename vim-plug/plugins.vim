@@ -43,9 +43,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
     " Python Code folding, indentation
-    Plug 'tmhedberg/SimpylFold'
-    Plug 'vim-scripts/indentpython.vim'
-    Plug 'vim-syntastic/syntastic'
-    Plug 'nvie/vim-flake8'
+    "Plug 'tmhedberg/SimpylFold'
+    "Plug 'vim-scripts/indentpython.vim'
+    " Plug 'vim-syntastic/syntastic'
+    "Plug 'nvie/vim-flake8'
     Plug 'jnurmine/Zenburn'
-call plug#end()
+    " Code completion and Linting
+    Plug 'dense-analysis/ale'
+    call plug#end()
