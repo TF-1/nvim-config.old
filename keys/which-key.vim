@@ -24,15 +24,24 @@ let g:which_key_sep = '→'
 " set timeoutlen=100
 
 " Single mappings
-let g:which_key_map['o'] = [ ':Files'           , 'open FZF' ]
-let g:which_key_map['O'] = [ ':Startify'        , 'Startify' ]
-let g:which_key_map['e'] = [ ':RnvimrToggle'    , 'open file' ]
-let g:which_key_map['E'] = [ ':NERDTreeToggle'  , 'File Explorer' ]
-let g:which_key_map['s'] = [ ':BLines'          , 'search buffer' ]
-let g:which_key_map['S'] = [ ':Lines'           , 'search all' ]
-let g:which_key_map['g'] = [ ':Rg'              , 'grep Rg']
-let g:which_key_map['b'] = [ ':Buffers'         , 'select buffer']
-
+"
+" Find all files
+let g:which_key_map['o'] = [ ':Telescope find_files' , 'find file' ]
+" Find git files
+let g:which_key_map['O'] = [ ':Telescope git_files'  , 'git ls-file' ]
+" ripgrep like grep through dir
+let g:which_key_map['s'] = [ ':Telescope live_grep'  , 'grep live']
+let g:which_key_map['b'] = [ ':Telescope buffers'         , 'find buffer']
+let g:which_key_map['S'] = [ ':Telescope grep_string', 'grep' ]
+" Find most recent files opened
+let g:which_key_map['R'] = [ ':Telescope oldfiles '  , 'Recent files' ]
+" Ranger files explorer
+let g:which_key_map['E'] = [ ':RnvimrToggle'    , 'open file' ]
+" Nerd tree files
+let g:which_key_map['e'] = [ ':NERDTreeToggle'  , 'File Explorer' ]
+" Startify LRU screen
+let g:which_key_map['r'] = [ ':Startify'        , 'Startify' ]
+"
 " GIT commands
 let g:which_key_map['G'] = {
       \ 'name' : '+GIT' ,

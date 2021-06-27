@@ -11,3 +11,4 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/syntastic.vim
 source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/plug-config/telescope.vim

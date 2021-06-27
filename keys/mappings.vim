@@ -72,3 +72,10 @@ nnoremap <F2> :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i
 "noremap <Leader>o o<Esc>^Da
 "
 "nnoremap <Leader>O O<Esc>^Da
+"
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff :Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fl <cmd>Telescope git_files<cr>
