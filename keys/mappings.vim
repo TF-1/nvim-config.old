@@ -52,8 +52,6 @@ nnoremap <C-s> :w<CR>
 nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
-" <TAB>: completion.
-inoremap <expr><C-SPACE> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " Better tabbing
 vnoremap < <gv
@@ -69,13 +67,21 @@ nnoremap <C-l> <C-w>l
 nnoremap <F1> :noh
 " Search and replace
 nnoremap <F2> :%s/<c-r><c-w>/<c-r><c-w>/gc<c-f>$F/i
-"noremap <Leader>o o<Esc>^Da
-"
-"nnoremap <Leader>O O<Esc>^Da
 "
 " Find files using Telescope command-line sugar.
-nnoremap <leader>ff :Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-nnoremap <leader>fl <cmd>Telescope git_files<cr>
+nnoremap <silent>ff <cmd>Telescope find_files<cr>
+nnoremap <silent>fs <cmd>Telescope current_buffer_fuzzy_find<cr>
+nnoremap <silent>fg <cmd>Telescope live_grep<cr>
+nnoremap <silent>fb <cmd>Telescope buffers<cr>
+nnoremap <silent>fh <cmd>Telescope help_tags<cr>
+nnoremap <silent>fl <cmd>Telescope git_files<cr>
+
+" LSP config (the mappings used in the default file don't quite work right)
+nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent> gr <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> gi <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> K <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> <C-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> <C-n> <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>

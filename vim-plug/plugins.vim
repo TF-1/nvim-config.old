@@ -8,8 +8,17 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify'
+    " Language server support LSP
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'nvim-lua/completion-nvim'
+    Plug 'kabouzeid/nvim-lspinstall'
+    Plug 'glepnir/lspsaga.nvim'
+    Plug 'hrsh7th/nvim-compe'
     " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-treesitter/playground'
+    Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+    "Plug 'sheerun/vim-polyglot'
     " File Explorer
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
@@ -18,7 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'liuchengxu/vim-which-key'
     " Install a theme a number of popular color schemes
     " Plug 'tomasr/molokai'
-    Plug 'morhetz/gruvbox' 
+    Plug 'morhetz/gruvbox'
     " Status bar at the top and bottom
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
@@ -30,11 +39,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'nvim-telescope/telescope-fzy-native.nvim'
-    "
-    ""Plug 'airblade/vim-rooter'        
-    " Ranger
-    "Plug 'francoiscabrol/ranger.vim'
-    "Plug 'rbgrouleff/bclose.vim'
+    " Ranger file manager
     Plug 'ryanoasis/vim-devicons'
     Plug 'kevinhwang91/rnvimr'
     " GIT support
@@ -42,11 +47,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-rhubarb'
     Plug 'junegunn/gv.vim'
-    " Python Code folding, indentation
-    "Plug 'tmhedberg/SimpylFold'
-    "Plug 'vim-scripts/indentpython.vim'
-    " Plug 'vim-syntastic/syntastic'
-    "Plug 'nvie/vim-flake8'
+    " Zenburn is a low-contrast color scheme for Vim
     Plug 'jnurmine/Zenburn'
     " Code completion and Linting
     Plug 'dense-analysis/ale'

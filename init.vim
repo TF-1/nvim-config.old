@@ -12,3 +12,6 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/ALE.vim
 source $HOME/.config/nvim/themes/gruvbox.vim
 source $HOME/.config/nvim/plug-config/telescope.vim
+source $HOME/.config/nvim/plug-config/treesitter.vim
+source $HOME/.config/nvim/plug-config/lsp.vim
+source $HOME/.config/nvim/plug-config/compe.vim
